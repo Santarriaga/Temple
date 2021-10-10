@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728168481652",
+    "project_id": "temple-707a2",
+    "storage_bucket": "temple-707a2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728168481652:android:cadd30116dcaa9e95e2221",
+        "android_client_info": {
+          "package_name": "com.grumpy.temple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728168481652-9ckvde73vn64gvb0q9geo8c99osvoe56.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmDgZaMZcFUr74b3ExNtMoItVWis03Oec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728168481652-9ckvde73vn64gvb0q9geo8c99osvoe56.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
