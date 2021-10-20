@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
+import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.appbar.MaterialToolbar
@@ -31,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         topAppBar = findViewById(R.id.topAppBar)
         drawerLayout = findViewById(R.id.drawerLayout)
         navigationView = findViewById(R.id.navigationView)
-        fab = findViewById(R.id.fab)
 
 
 
@@ -53,15 +53,8 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
         findViewById<NavigationView>(R.id.navigationView).setupWithNavController(navController)
 
-        //set up bottom sheet
-        val modalBottomSheet = BottomSheetFragment()
 
-//        val modalBottomSheetBehavior = (modalBottomSheet.dialog as BottomSheetDialog)
-//        modalBottomSheetBehavior.behavior.state =BottomSheetBehavior.STATE_EXPANDED
 
-        fab.setOnClickListener {
-            modalBottomSheet.show(supportFragmentManager,BottomSheetFragment.TAG)
-        }
 
     }
 

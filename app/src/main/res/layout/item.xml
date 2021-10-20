@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="300dp"
+    android:layout_width="325dp"
     android:layout_height="300dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginStart="20dp"
     android:layout_marginEnd="20dp"
     app:cardCornerRadius="5dp"
-    app:cardElevation="15dp"
+    app:cardElevation="10dp"
     android:layout_marginTop="15dp"
     android:id="@+id/parent">
 
@@ -50,6 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/rubik"
             app:layout_constraintEnd_toEndOf="@+id/brand_logo"
             app:layout_constraintStart_toStartOf="@+id/brand_logo"
             app:layout_constraintTop_toBottomOf="@+id/brand_logo"
@@ -60,6 +61,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/rubik"
             app:layout_constraintEnd_toEndOf="@+id/product_name"
             app:layout_constraintStart_toStartOf="@+id/product_name"
             app:layout_constraintTop_toBottomOf="@+id/product_name"

@@ -26,7 +26,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/logo"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_marginStart="16dp"
@@ -36,15 +36,16 @@
             app:layout_constraintTop_toBottomOf="@+id/item_image" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/brand"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="2dp"
+            android:fontFamily="@font/rubik"
             android:text="LMBTJK"
             android:textSize="20sp"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+            app:layout_constraintStart_toEndOf="@+id/logo"
+            app:layout_constraintTop_toTopOf="@+id/logo" />
 
         <TextView
             android:id="@+id/item_price"
@@ -52,33 +53,35 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="16dp"
-            tools:text="$240"
+            android:fontFamily="@font/rubik"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/item_image" />
+            app:layout_constraintTop_toBottomOf="@+id/item_image"
+            tools:text="$240" />
 
         <TextView
             android:id="@+id/item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            tools:text="Flow Shirt Blouse"
+            android:fontFamily="@font/rubik"
             android:textSize="24dp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/imageView2"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintStart_toStartOf="@+id/logo"
+            app:layout_constraintTop_toBottomOf="@+id/logo"
+            tools:text="Flow Shirt Blouse" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/item_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="16dp"
-            tools:text="PinStripped Cornflower blue cotton blouse teaks you on a walk to the park or just dowen the hall"
+            android:fontFamily="@font/rubik"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/item_title"
-            app:layout_constraintTop_toBottomOf="@+id/item_title" />
+            app:layout_constraintTop_toBottomOf="@+id/item_title"
+            tools:text="PinStripped Cornflower blue cotton blouse teaks you on a walk to the park or just dowen the hall" />
 
         <View
             android:id="@+id/divider"
@@ -90,7 +93,7 @@
             android:background="?android:attr/listDivider"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:layout_constraintTop_toBottomOf="@+id/item_description" />
 
         <TextView
             android:id="@+id/textView5"
@@ -98,6 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/rubik"
             android:text="Select Size"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -189,6 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/rubik"
             android:text="Color"
             android:textSize="20sp"
             android:textStyle="bold"
@@ -227,12 +232,13 @@
         </com.google.android.material.chip.ChipGroup>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btn_add_to_Cart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
+            android:fontFamily="@font/rubik"
             android:text="Add to Cart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -248,7 +254,7 @@
             android:background="?android:attr/listDivider"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_to_Cart" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -261,7 +267,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/close"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="24dp"

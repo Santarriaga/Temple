@@ -1,4 +1,4 @@
-package com.grumpy.temple
+package com.grumpy.temple.adapters
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.grumpy.temple.R
 import com.grumpy.temple.fragments.HomeFragmentDirections
 import com.grumpy.temple.models.Item
+import java.text.NumberFormat
 
 class ItemAdapter(private val context : Context, private val dataSet: List<Item>) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -25,9 +25,12 @@ class ItemAdapter(private val context : Context, private val dataSet: List<Item>
        val item = dataSet[position]
 
         holder.itemName.text = item.itemName
-        holder.itemPrice.text = item.itemPrice
+
+        val formattedPrice = NumberFormat.getCurrencyInstance().format(item.itemPrice.toDouble())
+        holder.itemPrice.text = formattedPrice
 
         Glide.with(holder.itemView).load(item.imgUrl).into(holder.itemImage)
+        Glide.with(holder.itemView).load(item.logoUrl).into(holder.itemLogo)
 
         holder.cardView.setOnClickListener{
             val itemID = item.id

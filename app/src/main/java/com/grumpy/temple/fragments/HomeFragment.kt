@@ -11,9 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import com.grumpy.temple.ItemAdapter
+import com.grumpy.temple.adapters.ItemAdapter
 import com.grumpy.temple.R
 import com.grumpy.temple.models.Item
 import kotlinx.coroutines.CoroutineScope
@@ -31,7 +30,8 @@ class HomeFragment : Fragment() {
 
     private val productCollectionRef = Firebase.firestore.collection("products")
     private val dataset = mutableListOf<Item>()
-    lateinit var recyclerView : RecyclerView
+    private lateinit var recyclerView : RecyclerView
+    private lateinit var fab :FloatingActionButton
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,6 +45,12 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         recyclerView= view.findViewById(R.id.recycler_view)
+        fab = view.findViewById(R.id.fab)
+
+        fab.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_bottomSheetFragment)
+        }
+
         retrieveProducts()
 
     }
@@ -58,11 +64,12 @@ class HomeFragment : Fragment() {
                     val name = doc["name"].toString()
                     val price = doc["price"].toString()
                     val imgUrl = doc["imgUrl"].toString()
-                    dataset.add(Item(id,name,price,imgUrl))
+                    val logoUrl = doc["logoUrl"].toString()
+                    dataset.add(Item(id,name,price,imgUrl,logoUrl,"",""))
             }
             withContext(Dispatchers.Main){
                 recyclerView.layoutManager =LinearLayoutManager(requireContext())
-                recyclerView.adapter =ItemAdapter(requireContext(),dataset)
+                recyclerView.adapter = ItemAdapter(requireContext(),dataset)
             }
 
         }catch (e : Exception){
