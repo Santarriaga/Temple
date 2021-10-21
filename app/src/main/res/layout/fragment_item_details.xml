@@ -23,7 +23,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_of_product" />
 
         <ImageView
             android:id="@+id/logo"
@@ -33,7 +34,8 @@
             android:layout_marginTop="10dp"
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintStart_toStartOf="@+id/item_image"
-            app:layout_constraintTop_toBottomOf="@+id/item_image" />
+            app:layout_constraintTop_toBottomOf="@+id/item_image"
+            android:contentDescription="@string/logo_of_item" />
 
         <TextView
             android:id="@+id/brand"
@@ -42,7 +44,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/rubik"
-            android:text="LMBTJK"
+            tools:text="LMKYB"
             android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/logo"
             app:layout_constraintTop_toTopOf="@+id/logo" />
@@ -65,7 +67,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/rubik"
-            android:textSize="24dp"
+            android:textSize="23sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/logo"
             app:layout_constraintTop_toBottomOf="@+id/logo"
@@ -81,7 +83,7 @@
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/item_title"
             app:layout_constraintTop_toBottomOf="@+id/item_title"
-            tools:text="PinStripped Cornflower blue cotton blouse teaks you on a walk to the park or just dowen the hall" />
+            tools:text="PinStripped Cornflower blue cotton blouse teaks you on a walk to the park or just down the hall" />
 
         <View
             android:id="@+id/divider"
@@ -102,7 +104,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/rubik"
-            android:text="Select Size"
+            android:text="@string/select_size"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,49 +130,49 @@
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="00" />
+                    android:text="@string/_00" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_2"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="02" />
+                    android:text="@string/_02" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_3"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="04" />
+                    android:text="@string/_04" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_4"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="06" />
+                    android:text="@string/_06" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_5"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="08" />
+                    android:text="@string/_08" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_6"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10" />
+                    android:text="@string/_10" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_7"
                     style="@style/Widget.MaterialComponents.Chip.Choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="12" />
+                    android:text="@string/_12" />
 
             </com.google.android.material.chip.ChipGroup>
 
@@ -194,7 +196,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/rubik"
-            android:text="Color"
+            android:text="@string/color"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
@@ -239,7 +241,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
             android:fontFamily="@font/rubik"
-            android:text="Add to Cart"
+            android:text="@string/add_to_cart"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
@@ -264,7 +266,8 @@
             android:layout_marginEnd="32dp"
             android:src="@drawable/ic_add_shopping_cart_24"
             app:layout_constraintEnd_toStartOf="@+id/imageView5"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/add_to_cart_icon" />
 
         <ImageView
             android:id="@+id/close"
@@ -274,7 +277,8 @@
             android:layout_marginTop="24dp"
             android:src="@drawable/ic_close"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/close_page" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -282,9 +286,10 @@
             android:layout_height="30dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_diamond"
+            android:src="@drawable/ic_heart"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/add_to_wishlist" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

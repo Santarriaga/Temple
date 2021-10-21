@@ -6,6 +6,36 @@
     <string name="tax">%s</string>
     <string name="shipping">%s</string>
     <string name="price">%s</string>
+    <string name="logo">Logo</string>
+    <string name="close_page">Close Page</string>
+    <string name="cart">Cart</string>
+    <string name="subtotal_txt">Subtotal</string>
+    <string name="shipping_txt">Shipping</string>
+    <string name="tax_txt">Tax</string>
+    <string name="total_txt">TOTAL</string>
+    <string name="checkout">PROCEED TO CHECKOUT</string>
+    <string name="view_cart">View Cart</string>
+    <string name="image_of_product">Image of product</string>
+    <string name="logo_of_item">Logo of item</string>
+    <string name="select_size">Select Size</string>
+    <string name="_00">00</string>
+    <string name="_02">02</string>
+    <string name="_04">04</string>
+    <string name="_06">06</string>
+    <string name="_08">08</string>
+    <string name="_10">10</string>
+    <string name="_12">12</string>
+    <string name="color">Color</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="add_to_cart_icon">Add to cart Icon</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+    <string name="remove_from_cart">Remove from Cart</string>
+    <string name="home">Home</string>
+    <string name="apartment">Apartment</string>
+    <string name="shoes">Shoes</string>
+    <string name="tops">Tops</string>
+    <string name="whishlist">Whishlist</string>
+    <string name="shopping_cart">Shopping Cart</string>
 
     <string-array name="sizes">
         <item>00</item>

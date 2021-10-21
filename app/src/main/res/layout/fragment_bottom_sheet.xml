@@ -22,7 +22,8 @@
             android:layout_marginTop="24dp"
             android:src="@drawable/ic_close"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/close_page" />
 
         <TextView
             android:id="@+id/textView8"
@@ -31,7 +32,7 @@
             android:layout_marginStart="64dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/rubik"
-            android:text="Cart"
+            android:text="@string/cart"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -86,7 +87,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/rubik"
-            android:text="TOTAL"
+            android:text="@string/total_txt"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/divider7"
             app:layout_constraintTop_toBottomOf="@+id/divider7" />
@@ -97,7 +98,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/rubik"
-            android:text="Subtotal"
+            android:text="@string/subtotal_txt"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -108,7 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/rubik"
-            android:text="Shipping"
+            android:text="@string/shipping_txt"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/textView11"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -119,7 +120,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/rubik"
-            android:text="Tax"
+            android:text="@string/tax_txt"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -182,7 +183,7 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="42dp"
             android:fontFamily="@font/rubik"
-            android:text="PROCEED TO CHECKOUT"
+            android:text="@string/checkout"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

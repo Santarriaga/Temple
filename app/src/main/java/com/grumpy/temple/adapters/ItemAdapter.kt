@@ -45,7 +45,7 @@ class ItemAdapter(private val context : Context, private val dataSet: List<Item>
         return dataSet.size
     }
 
-    class ItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view){
+    class ItemViewHolder( view: View) : RecyclerView.ViewHolder(view){
         val itemName : TextView = view.findViewById(R.id.product_name)
         val itemPrice : TextView = view.findViewById(R.id.product_price)
         val itemImage : ImageView = view.findViewById(R.id.product_image)

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
     tools:context=".fragments.HomeFragment">
 
 
@@ -23,6 +24,7 @@
             android:layout_marginBottom="32dp"
             android:src="@drawable/ic_shopping_cart"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            android:contentDescription="@string/view_cart" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

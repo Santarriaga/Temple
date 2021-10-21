@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.grumpy.temple.R
@@ -35,7 +34,7 @@ class ItemCartAdapter(private val context : Context, private val dataSet: List<I
        return dataSet.size
     }
 
-    class ItemCartViewHolder(private val view: View) : RecyclerView.ViewHolder(view){
+    class ItemCartViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val itemName : TextView = view.findViewById(R.id.txt_title)
         val itemPrice : TextView = view.findViewById(R.id.txt_price)
         val itemImage : ImageView = view.findViewById(R.id.img_item)

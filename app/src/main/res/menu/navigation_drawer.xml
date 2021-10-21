@@ -3,27 +3,27 @@
         <group android:id="@+id/group1">
                 <item
                     android:id="@+id/homeFragment"
-                    android:title="Home Fragment"
+                    android:title="@string/home"
                     />
                 <item
                     android:id="@+id/item2"
-                    android:title="Apartment"
+                    android:title="@string/apartment"
                     />
                 <item
                     android:id="@+id/item3"
-                    android:title="Accessories"
+                    android:title="@string/shoes"
                     />
                 <item
                     android:id="@+id/item4"
-                    android:title="Shoes"
+                    android:title="@string/tops"
                     />
                 <item
                     android:id="@+id/item5"
-                    android:title="Tops"
+                    android:title="@string/whishlist"
                     />
                 <item
-                    android:id="@+id/item6"
-                    android:title="Bottoms"
+                    android:id="@+id/bottomSheetFragment"
+                    android:title="@string/shopping_cart"
                     />
 
         </group>

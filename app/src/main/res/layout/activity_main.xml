@@ -29,8 +29,8 @@
                 android:background="@android:color/transparent"
                 android:elevation="0dp"
                 app:navigationIcon="@drawable/ic_drawer_logo"
-                app:title="Temple"
-                app:titleTextColor="@color/black"/>
+                app:title="TEMPLE"
+                app:titleTextColor="@color/dark_900"/>
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -55,6 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:background="@color/secondary_50"
         app:menu="@menu/navigation_drawer" />
 
 

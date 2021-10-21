@@ -1,6 +1,5 @@
 package com.grumpy.temple.viewmodel
 
-import android.content.ClipData
 import androidx.lifecycle.ViewModel
 import com.grumpy.temple.models.Item
 
